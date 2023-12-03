@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#212429"
+    android:backgroundTintMode="screen"
+    android:layoutDirection="ltr"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/progress_layout"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_margin="200dp">
+
+        <!--progress bar implementation-->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/circular_shape"
+            android:indeterminate="false"
+            android:max="33"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:textAlignment="center" />
+
+        <!--Text implementation in center of the progress bar-->
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

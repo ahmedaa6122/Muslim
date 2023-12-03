@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/quranIndexFragment"
+            android:icon="@drawable/koran"
+            android:title="@string/Quran" />
+        <item
+            android:id="@+id/quranMp3"
+            android:icon="@drawable/koran"
+            android:title="@string/Quran_mp3" />
+        <item
+            android:id="@+id/azkarHomeFragment"
+            android:icon="@drawable/doaa"
+            android:title="@string/menu_azkar" />
+
+        <item
+            android:id="@+id/DoaaHomeFragment"
+            android:icon="@drawable/doaa"
+            android:title="@string/menu_doaa" />
+
+        <item
+            android:id="@+id/tasbih"
+            android:icon="@drawable/tasbih"
+            android:title="@string/tasbih" />
+        <item
+            android:id="@+id/goodLinkFragment"
+            android:icon="@drawable/ic_baseline_people_24"
+            android:title="@string/links" />
+
+        <item
+            android:id="@+id/aboutUsFragment"
+            android:icon="@drawable/ic_baseline_people_24"
+            android:title="@string/aboutApp" />
+    </group>
+</menu>

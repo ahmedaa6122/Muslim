@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/quranIndexFragment">
+
+    <fragment
+        android:id="@+id/quranFragment"
+        android:name="com.example.quran.ui.quran.quranContainer.QuranContainerFragment"
+        android:label="القراءن الكريم"
+        tools:layout="@layout/fragment_page_quran" >
+        <argument
+            android:name="startPage"
+            app:argType="integer"
+
+            />
+    </fragment>
+
+     <fragment
+        android:id="@+id/quranIndexFragment"
+        android:name="com.example.quran.ui.quran.quranIndex.QuranIndexFragment"
+        android:label="@string/Quran"
+        tools:layout="@layout/fragment_quran_index" >
+        <action
+            android:id="@+id/action_quranIndexFragment_to_quranFragment"
+            app:destination="@id/quranFragment" />
+        <action
+            android:id="@+id/action_quranIndexFragment_to_quranSearchFragment"
+            app:destination="@id/quranSearchFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/quranSearchFragment"
+        android:name="com.example.quran.ui.quran.quranSearch.QuranSearchFragment"
+        android:label="@string/Quran_search"
+        tools:layout="@layout/fragment_quran_search" >
+        <action
+            android:id="@+id/action_quranSearchFragment_to_quranFragment"
+            app:destination="@id/quranFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/azkarHomeFragment"
+        android:name="com.example.quran.ui.azkar.AzkarHomeFragment"
+        android:label="@string/Azkar"
+        tools:layout="@layout/fragment_azkar_home" >
+        <action
+            android:id="@+id/action_azkarHomeFragment_to_azkarListFragment"
+            app:destination="@id/azkarListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/DoaaHomeFragment"
+        android:name="com.example.quran.ui.azkar.DoaaHomeFragment"
+        android:label="@string/menu_doaa"
+        tools:layout="@layout/fragment_azkar_home" >
+        <action
+            android:id="@+id/action_DoaaHomeFragment_to_DoaaFragment"
+            app:destination="@id/DoaaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/DoaaFragment"
+        android:name="com.example.quran.ui.azkarList.DoaaFragment"
+        android:label="@string/menu_doaa"
+        tools:layout="@layout/fragment_azkar_list" >
+        <argument
+            android:name="azkarType"
+            app:argType="string"
+            app:nullable="false"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/azkarListFragment"
+        android:name="com.example.quran.ui.azkarList.AzkarListFragment"
+        android:label="@string/Azkar"
+        tools:layout="@layout/fragment_azkar_list" >
+        <argument
+            android:name="azkarType"
+            app:argType="string"
+            app:nullable="false"/>
+    </fragment>
+    <fragment
+        android:id="@+id/quranMp3"
+
+        android:name="com.example.quran.ui.QuranMp3.QuranMp3"
+        android:label="@string/quran_mp3" />
+    <fragment
+        android:id="@+id/tasbih"
+        android:name="com.example.quran.ui.tasbih.Tasbih"
+        android:label="@string/tasbih" />
+    <fragment
+        android:id="@+id/goodLinkFragment"
+        android:name="com.example.quran.ui.links.GoodLinkFragment"
+        android:label="@string/links"
+        tools:layout="@layout/fragment_good_link" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.example.quran.AboutUsFragment"
+        android:label="@string/aboutApp"
+        tools:layout="@layout/fragment_about_us" />
+</navigation>
