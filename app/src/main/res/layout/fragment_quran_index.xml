@@ -63,6 +63,7 @@ tools:context=".ui.quran.quranIndex.QuranIndexFragment">>
       android:layout_marginBottom="28dp"
       android:background="@drawable/fab"
       android:src="@drawable/ic_bookmark"
+      style="@android:style/Widget.Button"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent" />
 

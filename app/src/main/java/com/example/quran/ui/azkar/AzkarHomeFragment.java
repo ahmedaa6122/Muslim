@@ -49,9 +49,6 @@ public class AzkarHomeFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        //LinearLayout layoutToAnimate = view.findViewById(R.id.azkarList);
-        //MyAnimation animation=new MyAnimation(layoutToAnimate,0.2f);
-        //animation.animation();
         azkarList = view.findViewById(R.id.azkar_recycle);
         azkarList.setAdapter(adapter);
         azkarList.setLayoutManager(new LinearLayoutManager(getContext()));

@@ -61,7 +61,6 @@ public class AzkarListAdapter extends RecyclerView.Adapter<AzkarListAdapter.View
             description=itemView.findViewById(R.id.description);
             count=itemView.findViewById(R.id.count);
             reference=itemView.findViewById(R.id.reference);
-            //line=itemView.findViewById(R.id.line);
             share=itemView.findViewById(R.id.share);
             copy=itemView.findViewById(R.id.copy);
 
@@ -73,7 +72,6 @@ public class AzkarListAdapter extends RecyclerView.Adapter<AzkarListAdapter.View
             reference.setText(azkar.getReference());
 
             if(azkar.getReference().length()==0||azkar.getDescription().length()==0) {
-               // line.setVisibility(View.GONE);
                 reference.setVisibility(View.GONE);
                 description.setVisibility(View.GONE);
             }

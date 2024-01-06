@@ -24,7 +24,7 @@ import java.util.Locale;
 public class IndexListAdapter extends RecyclerView.Adapter<IndexListAdapter.ViewHolder> {
     List<?>list;
     Fragment fragment;
-    public String[]colors={"#FCFCFC","#F4F4F4"};
+   public String[]colors={"#FCFCFC","#F4F4F4"};
 
     public IndexListAdapter(List<?> list, Fragment fragment) {
         this.list = list;
@@ -75,9 +75,12 @@ public class IndexListAdapter extends RecyclerView.Adapter<IndexListAdapter.View
             soraName.setText(sora.getArabicName());
             from.setText(nf.format(sora.getStartPage()));
             to.setText(nf.format(sora.getEndPage()));
-            itemView.setOnClickListener(v -> NavHostFragment
-                    .findNavController(fragment)
-                    .navigate(QuranIndexFragmentDirections.actionQuranIndexFragmentToQuranFragment(sora.getStartPage())));
+            itemView.setOnClickListener(v ->{
+                itemView.setBackgroundColor(Color.parseColor("#FFCED0D3"));
+                NavHostFragment
+                        .findNavController(fragment)
+                        .navigate(QuranIndexFragmentDirections.actionQuranIndexFragmentToQuranFragment(sora.getStartPage()));
+            });
         }
 
         public void bind(Jozz jozz) {
@@ -89,10 +92,12 @@ public class IndexListAdapter extends RecyclerView.Adapter<IndexListAdapter.View
             soraNumber.setText("");
             from.setText(nf.format(jozz.getStartPage()));
             to.setText(nf.format(jozz.getEndPage()));
-
-            itemView.setOnClickListener(v -> NavHostFragment
+            itemView.setOnClickListener(v ->{
+                    itemView.setBackgroundColor(Color.parseColor("#FFCED0D3"));
+                    NavHostFragment
                     .findNavController(fragment)
-                    .navigate(QuranIndexFragmentDirections.actionQuranIndexFragmentToQuranFragment(jozz.getStartPage())));
-        }
+                    .navigate(QuranIndexFragmentDirections.actionQuranIndexFragmentToQuranFragment(jozz.getStartPage()));
+        });
     }
+}
 }

@@ -18,6 +18,8 @@
         <entry key="..\:/AndroidPro/Quran/app/src/main/res/drawable/ic_menu_camera.xml" value="0.23958333333333334" />
         <entry key="..\:/AndroidPro/Quran/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.23958333333333334" />
         <entry key="..\:/AndroidPro/Quran/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.2064814814814815" />
+        <entry key="..\:/AndroidPro/Quran/app/src/main/res/drawable/item_selector.xml" value="0.23958333333333334" />
+        <entry key="..\:/AndroidPro/Quran/app/src/main/res/drawable/ripple.xml" value="0.23958333333333334" />
         <entry key="..\:/AndroidPro/Quran/app/src/main/res/drawable/side_nav_bar.xml" value="0.23958333333333334" />
         <entry key="..\:/AndroidPro/Quran/app/src/main/res/drawable/zekr_background.xml" value="0.2064814814814815" />
         <entry key="..\:/AndroidPro/Quran/app/src/main/res/font/my_custom_font.xml" value="0.21574074074074073" />
@@ -50,6 +52,7 @@
         <entry key="..\:/AndroidPro/Quran/app/src/main/res/layout/list_item_quran_search.xml" value="0.21927083333333333" />
         <entry key="..\:/AndroidPro/Quran/app/src/main/res/layout/nav_header_main.xml" value="0.2" />
         <entry key="..\:/AndroidPro/Quran/app/src/main/res/layout/quran_mp3_item.xml" value="0.13518518518518519" />
+        <entry key="..\:/AndroidPro/Quran/app/src/main/res/layout/ripple.xml" value="0.21927083333333333" />
         <entry key="..\:/AndroidPro/Quran/app/src/main/res/layout/sora_list.xml" value="0.21927083333333333" />
         <entry key="..\:/AndroidPro/Quran/app/src/main/res/layout/sora_list_item.xml" value="0.25" />
         <entry key="..\:/AndroidPro/Quran/app/src/main/res/layout/video_item.xml" value="0.21927083333333333" />

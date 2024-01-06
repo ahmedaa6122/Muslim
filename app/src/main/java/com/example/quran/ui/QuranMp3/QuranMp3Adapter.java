@@ -66,6 +66,7 @@ public class QuranMp3Adapter extends RecyclerView.Adapter<QuranMp3Adapter.ViewHo
         });
 
         holder.itemView.setOnClickListener(view -> {
+            holder.itemView.setBackgroundColor(Color.parseColor("#FFCED0D3"));
             //mediaPlayer.pause();
            if (isNetworkConnected(holder.itemView.getContext())) {
                 // Stop the previously playing MediaPlayer, if any

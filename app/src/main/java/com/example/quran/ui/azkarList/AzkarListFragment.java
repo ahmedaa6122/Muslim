@@ -26,7 +26,6 @@ import java.util.Collections;
 public class AzkarListFragment extends Fragment {
 private AzkarListFragmentArgs args;
 private AzkarListAdapter adapter;
-    private ViewPager2 viewPager;
     private TextView zekrType;
     private RecyclerView listAzkar;
 
@@ -53,7 +52,6 @@ private AzkarListViewHolder viewHolder;
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        //viewPager=view.findViewById(R.id.viewPager);
         listAzkar=view.findViewById(R.id.listAzkar);
         zekrType=view.findViewById(R.id.zekrType);
         zekrType.setText(args.getAzkarType());
@@ -61,8 +59,5 @@ private AzkarListViewHolder viewHolder;
         listAzkar.addItemDecoration(new DividerItemDecoration(getContext(),DividerItemDecoration.VERTICAL));
         listAzkar.setAdapter(adapter);
         adapter.setAzkar(azkar);
-        //Collections.reverse(azkar);
-        //viewPager.setAdapter(adapter);
-
     }
 }

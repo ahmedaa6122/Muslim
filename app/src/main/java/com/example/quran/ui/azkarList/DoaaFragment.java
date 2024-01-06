@@ -26,8 +26,6 @@ public class DoaaFragment extends Fragment {
     private AzkarListAdapter adapter;
     private ViewPager2 viewPager;
     private TextView zekrType;
-
-    //private RecyclerView recycler;
     private AzkarListViewHolder viewHolder;
 
 

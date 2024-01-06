@@ -31,7 +31,6 @@ public class AzkarHomeAdapter extends RecyclerView.Adapter<AzkarHomeAdapter.View
 
     public void setZekrTypes(HashSet<ZekrType> zekrTypes) {
         this.zekrTypes =new ArrayList<>(zekrTypes);
-        //Collections.reverse(this.zekrTypes);
         notifyDataSetChanged();
     }
 
@@ -63,6 +62,7 @@ public class AzkarHomeAdapter extends RecyclerView.Adapter<AzkarHomeAdapter.View
             zekrName.setText(zekrType.getZekrName());
 
             itemView.setOnClickListener(view -> {
+                itemView.setBackgroundColor(Color.parseColor("#FFCED0D3"));
                 if(fileName.equals("Azkar")) {
                     NavHostFragment
                             .findNavController(fragment)
